@@ -1,0 +1,31 @@
+.Hero-container {
+    min-height: 90vh;
+}
+
+.hero_left {
+    padding-top: 5%;
+    color: #fff;
+}
+
+.hero_left span {
+    background: linear-gradient(#7E35E4, #54267D);
+    -webkit-background-clip: text; /* no necesariamente compatible */
+    color: transparent;
+}
+
+.Hero-container .custom-button {
+    background: linear-gradient(#7E35E4, #54267D);
+    border-bottom: #54267D;
+    color: #fff;
+}
+
+.hero_right .imageContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.imageContainer .hero_right-img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}

@@ -1,0 +1,15 @@
+.Guide-container {
+    background-color: #000;
+}
+
+.Guide-container h1 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.Guide-container span {
+    background: linear-gradient(#7E35E4, #54267D);
+    -webkit-background-clip: text; /* no necesariamente compatible */
+    color: transparent;
+}
