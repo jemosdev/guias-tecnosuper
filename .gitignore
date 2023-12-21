@@ -11,12 +11,14 @@ node_modules
 dist
 dist-ssr
 *.local
+bower_components
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
+.DS_*
 *.suo
 *.ntvs*
 *.njsproj

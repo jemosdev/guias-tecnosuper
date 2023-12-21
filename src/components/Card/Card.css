@@ -1,0 +1,13 @@
+.card-bis_skin_checked .card-body {
+    border: 0.1rem solid #54267D;
+}
+
+.card-bis_skin_checked .btn {
+    color: #54267D;
+    border: 0.1rem solid #54267D;
+}
+
+.card-bis_skin_checked .btn:hover {
+    background: #54267D;
+    color:  #fff;
+}
