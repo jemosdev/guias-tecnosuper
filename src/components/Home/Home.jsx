@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import { Header } from "../header/Header";
 import { Guides } from "../Guides/Guides";
+import { AboutUs } from "../About/About";
 import { ContactUs } from "../contact/contact";
 
 function Home () {
@@ -9,6 +10,7 @@ function Home () {
         <>
             <Header/>
             <Guides/>
+            <AboutUs/>
             <ContactUs/>
         </>
     )

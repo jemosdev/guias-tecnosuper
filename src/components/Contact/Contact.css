@@ -1,0 +1,18 @@
+.Contact-container .contact-text {
+    background: #7E35E4;
+    background: linear-gradient(top, #7E35E4 0%, #54267D 100%);
+    -webkit-background-clip: text; /* no necesariamente compatible */
+    color: transparent;
+}
+
+.btn-container .custom-button {
+    background: #7E35E4;
+    background: linear-gradient(top, #7E35E4 0%, #54267D 100%);
+    border-bottom: #54267D;
+    color: #fff;
+}
+
+.btn-container .custom-button:hover {
+    background: #fff;
+    color:  #54267D;
+}

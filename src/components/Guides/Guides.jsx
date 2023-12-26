@@ -6,7 +6,7 @@ import { Cards } from "../Cards/Cards";
 function Guides() {
     return (
         <>
-            <div className="Guide-container pt-5">
+            <div className="Guide-container text-light d-flex justify-content-center pt-5">
                 <h1>Guias<span>Tecnosuper</span></h1>
             </div>
             <div>
