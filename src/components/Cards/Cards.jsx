@@ -28,17 +28,6 @@ function Cards() {
                     <Card />
                 </div>
             </div>
-            <div className="row p-4">
-                <div className="col-md-4">
-                    <Card />
-                </div>
-                <div className="col-md-4">
-                    <Card />
-                </div>
-                <div className="col-md-4">
-                    <Card />
-                </div>
-            </div>
         </div>
     )
 }

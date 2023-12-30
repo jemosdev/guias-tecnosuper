@@ -9,7 +9,7 @@ function ContactUs() {
             <Container>
                 <Row>
                     <div>
-                        <h1 className="contact-text d-flex justify-content-center p-4"> ¡Contáctanos!</h1>
+                        <h1 className="contact-title d-flex justify-content-center p-4"> ¡Contáctanos!</h1>
                     </div>
                 </Row>
                 <Row>

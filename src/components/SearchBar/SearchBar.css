@@ -1,0 +1,37 @@
+.SearchBar {
+    width: 424px;
+    height: 64px;
+    background: #d8d8d8;
+    border: 3px solid #fff;
+    border-radius: 44px;
+    margin: 0 2rem;
+    padding-left: 15px; 
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+.SearchBar::placeholder {
+    color: #fff;
+    font-family: 'Montserrat';
+}
+.SearchBar:focus {
+    outline-color: #54267D;
+}
+.search-container {
+    position: relative;
+}
+.search_icon {
+    background-image: url(../../assets/search.svg);
+    background-color: #54267D;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    cursor: pointer;
+    top: 12%;
+    right: 10px;
+    transform: translateX(-55%);
+}

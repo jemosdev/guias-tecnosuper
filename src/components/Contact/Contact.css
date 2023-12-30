@@ -1,8 +1,13 @@
-.Contact-container .contact-text {
+.Contact-container .contact-title {
     background: #7E35E4;
     background: linear-gradient(top, #7E35E4 0%, #54267D 100%);
     -webkit-background-clip: text; /* no necesariamente compatible */
     color: transparent;
+}
+
+.Contact-container .form-group input {
+    background-color: #111;
+    color: #fff;
 }
 
 .btn-container .custom-button {

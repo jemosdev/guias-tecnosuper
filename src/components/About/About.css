@@ -4,3 +4,7 @@
     -webkit-background-clip: text; /* no necesariamente compatible */
     color: transparent;
 }
+
+.About-container .About__profile {
+    background-image: url(../../assets/Mask-group.svg);
+}
