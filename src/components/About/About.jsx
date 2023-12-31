@@ -8,7 +8,7 @@ function AboutUs() {
         <div className="About-container">
             <Container>
                 <Row>
-                    <h1 className="About-title d-flex justify-content-start text-light p-4">Sobre <span>Nosotros</span></h1>
+                    <h1 className="About-title d-flex justify-content-start text-light p-4">Sobre <span> Nosotros</span></h1>
                 </Row>
                     <Col md={7}>
                         <div className="about-text text-light">

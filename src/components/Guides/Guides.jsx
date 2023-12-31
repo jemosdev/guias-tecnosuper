@@ -6,8 +6,8 @@ import { SearchBar } from "../SearchBar/SearchBar";
 
 function Guides() {
     return (
-        <>
-            <div className="Guide-container text-light d-flex justify-content-center pt-5">
+        <div className="Guide-container">
+            <div className="Guide-text text-light d-flex justify-content-center pt-4">
                 <h1>Guias <span>Tecnosuper</span></h1>
             </div>
             <div>
@@ -16,7 +16,7 @@ function Guides() {
             <div>
                 <Cards/>
             </div>
-        </>
+        </div>
     )
 }
 

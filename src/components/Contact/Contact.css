@@ -1,15 +1,20 @@
+.Contact-container {
+    background-color: #111;
+}
 .Contact-container .contact-title {
     background: #7E35E4;
     background: linear-gradient(top, #7E35E4 0%, #54267D 100%);
     -webkit-background-clip: text; /* no necesariamente compatible */
     color: transparent;
 }
-
 .Contact-container .form-group input {
-    background-color: #111;
-    color: #fff;
+    background-color: #000;
+    outline-color: #54267D;
 }
-
+.Contact-container .form-control::placeholder {
+    color: #d8d8d8;
+    font-family: 'Montserrat';
+}
 .btn-container .custom-button {
     background: #7E35E4;
     background: linear-gradient(top, #7E35E4 0%, #54267D 100%);

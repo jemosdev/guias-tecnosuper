@@ -1,10 +1,11 @@
 .card-bis_skin_checked .card-body {
-    border: 0.1rem solid #54267D;
+    border: 1px solid #54267D;
+    background-color: #000;
 }
 
 .card-bis_skin_checked .btn {
     color: #54267D;
-    border: 0.1rem solid #54267D;
+    border: 1px solid #54267D;
 }
 
 .card-bis_skin_checked .btn:hover {
