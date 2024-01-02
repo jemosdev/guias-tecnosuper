@@ -1,4 +1,11 @@
 .Navbar-body {
-    border-bottom: 0.2rem solid #fff;
+    border-bottom: 2px solid #fff;
+    background-color: yellowgreen;
     }
-
+.Navbar-body .navbar-toggler-icon {
+    fill: orangered;
+}
+.navbar-body .navbar-toggler-icon,
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}

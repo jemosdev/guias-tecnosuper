@@ -15,7 +15,7 @@ function Topbar () {
                         <img src={logo} alt="logo"/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Navbar.Collapse id="basic-navbar-nav color-secondary">
                         <Nav className="ms-auto">
                             <Nav.Link href="#home" className="text-light">Home</Nav.Link>
                             <Nav.Link href="#home" className="text-light">Guias</Nav.Link>

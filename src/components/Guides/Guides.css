@@ -1,9 +1,32 @@
 .Guide-container {
     background-color: #111;
+    position: relative;
+    min-height: 800px;
+    width: 100%;
+}
+.Guide-text {
+    padding-top: 73px;
+    padding-bottom: 65px;
 }
 .Guide-text span {
     background: #7E35E4;
     background: linear-gradient(top, #7E35E4 0%, #54267D 100%);
     -webkit-background-clip: text; /* no necesariamente compatible */
     color: transparent;
+}
+.imageLeftBard {
+    position: absolute;
+    width: 150px;
+    height: 147px;
+    top: 10%;
+    left: 10%;
+    transform: translateX(-55%);
+}
+.imageRightBard {
+    position: absolute;
+    width: 150px;
+    height: 147px;
+    bottom: 59px;
+    right: 100px;
+    transform: translateX(0%) translateY(0%);
 }
