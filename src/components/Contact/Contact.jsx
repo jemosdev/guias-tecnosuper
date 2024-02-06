@@ -1,15 +1,15 @@
 import React from "react";
 import "./Contact.css";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row} from "react-bootstrap";
 
 function ContactUs() {
     return(
-        <div className="Contact-container p-4">
+        <div className="Contact-container p-2">
             <Container>
                 <Row>
                     <div>
-                        <h1 className="contact-title d-flex justify-content-center p-4"> ¡Contáctanos!</h1>
+                        <h1 className="contact-title d-flex justify-content-center p-4"> <b>¡Contáctanos!</b></h1>
                     </div>
                 </Row>
                 <Row>
@@ -34,7 +34,6 @@ function ContactUs() {
                 </Row>
             </Container>
         </div>
-        
     )
 }
 

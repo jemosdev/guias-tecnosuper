@@ -1,6 +1,6 @@
 .Contact-container {
     background-color: #111;
-    min-height: 800px;
+    height: 70vh;
 }
 .Contact-container .contact-title {
     background: #7E35E4;

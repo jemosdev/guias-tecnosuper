@@ -1,6 +1,8 @@
 import React from "react";
 import './SearchBar.css';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 function SearchBar() {
     return (
         <div className='SearchBar-wrapper d-flex justify-content-center'>
@@ -10,7 +12,8 @@ function SearchBar() {
                 className="SearchBar rounded-4" 
                 placeholder='Buscar guías'
                 />
-                <span className="search_icon border-0"></span>
+                <span className="search_icon border-0"><FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /></span>
+                
             </div>
         </div>
     );

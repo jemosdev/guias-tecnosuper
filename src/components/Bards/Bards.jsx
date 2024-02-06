@@ -1,6 +1,6 @@
 import React from "react";
 import './Bards.css';
-import imageBards from "../../assets/Bards.svg";
+import imageBards from "../../assets/bards.svg";
 
 function Bards() {
     return(

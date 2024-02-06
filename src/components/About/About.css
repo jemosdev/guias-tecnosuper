@@ -1,13 +1,23 @@
 .About-container {
-    background-color: #111;
-    min-height: 800px;
+    background-color: /*#111*/ yellowgreen;
+    height: 100vh;
 }
-.About-container span {
+.About-container b {
     background: #7E35E4;
     background: linear-gradient(top, #7E35E4 0%, #54267D 100%);
     -webkit-background-clip: text; /* no necesariamente compatible */
     color: transparent;
 }
-.About-container .About__profile {
-    background-image: url(../../assets/Mask-group.svg);
+.about-us {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 80%;
+}
+.about-text {
+    width: 40%;
+}
+.about-image {
+    width: 40%;
+    margin-top: -15%;
 }

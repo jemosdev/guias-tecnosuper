@@ -12,12 +12,12 @@ function Guides() {
                 <Bards/>
             </div>
             <div className="Guide-text text-light d-flex justify-content-center">
-                <h1>Guias <span>Tecnosuper</span></h1>
+                <h1>Guias <b>Tecnosuper</b></h1>
             </div>
             <div>
                 <SearchBar/>
             </div>
-            <div className="Guide-text text-light d-flex justify-content-center">
+            <div className="Guide-cards text-light d-flex justify-content-center">
                 <Cards/>
             </div>
         </div>

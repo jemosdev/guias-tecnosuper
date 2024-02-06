@@ -5,7 +5,7 @@ import { Card } from "../Card/Card";
 
 function Cards() {
     return (
-        <div className="Cards-Container">
+        <div className="Cards-Container pt-2">
             <div className="row">
                 <div className="col-md-4">
                     <Card />

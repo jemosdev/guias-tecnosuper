@@ -5,10 +5,10 @@ import { Hero } from "../Hero/Hero";
 
 function Header () {
     return (
-        <div>
+        <>
             <Topbar/>
             <Hero/>
-        </div>
+        </>
     )
 }
 

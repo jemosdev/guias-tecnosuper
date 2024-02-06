@@ -4,6 +4,8 @@ import { Header } from "../header/Header";
 import { Guides } from "../Guides/Guides";
 import { AboutUs } from "../About/About";
 import { ContactUs } from "../contact/contact";
+import { Footer } from "../Footer/Footer";
+
 
 function Home () {
     return (
@@ -12,6 +14,7 @@ function Home () {
             <Guides/>
             <AboutUs/>
             <ContactUs/>
+            <Footer/>
         </>
     )
 }
