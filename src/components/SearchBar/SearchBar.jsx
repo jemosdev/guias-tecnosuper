@@ -2,6 +2,7 @@ import React from "react";
 import './SearchBar.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 function SearchBar() {
     return (
@@ -12,8 +13,7 @@ function SearchBar() {
                 className="SearchBar rounded-4" 
                 placeholder='Buscar guías'
                 />
-                <span className="search_icon border-0"><FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /></span>
-                
+                <span className="search_icon border-0"><FontAwesomeIcon icon={faMagnifyingGlass} className="icon-magnifyingGlass" /></span>
             </div>
         </div>
     );
