@@ -6,6 +6,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
 function Topbar() {
     return (
         <Navbar expand="lg" sticky="top">
@@ -15,7 +18,7 @@ function Topbar() {
                 </Navbar.Brand>
                 
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
-                    {/* Replace your icon here */}
+                    <FontAwesomeIcon icon={faBars} />
                     <i class="bi bi-gear"></i>
                 </Navbar.Toggle>
 
