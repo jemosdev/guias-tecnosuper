@@ -3,9 +3,9 @@ import "./Contact.css";
 
 import { Container, Row} from "react-bootstrap";
 
-function ContactUs() {
+function Contact() {
     return(
-        <div className="Contact-container p-2">
+        <div className="Contact-container p-4">
             <Container>
                 <Row>
                     <div>
@@ -23,7 +23,7 @@ function ContactUs() {
                                 <input type="text" class="form-control rounded-3 border-0 text-light" placeholder="Apellido"/>
                                 </div>
                             </div>
-                            <div class="form-group col-md-12 pb-3">
+                            <div class="form-group col-md-12 pb-4">
                                 <input type="text" class="form-control rounded-3 border-0 text-light p-4" placeholder="¡Escribe aquí si tienes una duda!"/>
                             </div>
                             <div className="btn-container d-flex justify-content-center">
@@ -31,10 +31,10 @@ function ContactUs() {
                             </div>
                         </form>
                     </div>
-                </Row>
+                </Row>                
             </Container>
         </div>
     )
 }
 
-export { ContactUs };
+export { Contact };

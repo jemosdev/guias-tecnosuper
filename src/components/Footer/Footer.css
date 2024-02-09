@@ -1,20 +1,21 @@
 .footer {
     background-color: #111;
-    height: 35vh;
 }
 .wavy-container {
-    overflow: hidden;
+    width: 100%;
+    min-height: 300px;
 }
 
-.wavy-container-high {
-    margin-top: -15%;
+.wave {
+    position: relative;
 }
 
-.wavy-container-low {
-    margin-top: -25%;
+.wave fill {
 }
 
-.wavy-container-logo {
-    margin-top: -50%;
-    width: 50%;
+.wave svg {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    fill: #54267d;
 }
