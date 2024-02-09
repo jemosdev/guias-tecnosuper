@@ -10,12 +10,14 @@
     position: relative;
 }
 
-.wave fill {
-}
-
 .wave svg {
     position: relative;
     bottom: 0;
     left: 0;
     fill: #54267d;
+}
+
+.footer-contact {
+    margin-top: -30%;
+    margin-left: 15%;
 }

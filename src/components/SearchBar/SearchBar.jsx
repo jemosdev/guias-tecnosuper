@@ -2,7 +2,7 @@ import React from "react";
 import './SearchBar.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 function SearchBar() {
     return (
