@@ -2,6 +2,7 @@
     background-color: #111;
     height: 100vh;
 }
+
 .About-container b {
     background: #7E35E4;
     -webkit-background-clip: text; /* no necesariamente compatible */

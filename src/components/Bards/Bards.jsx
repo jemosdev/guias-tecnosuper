@@ -12,7 +12,7 @@ function Bards() {
             <img src={imageBards} alt="bard-image" className="hero_right-img" />
             </div>
         </div>
-    )
+    );
 }
 
 export { Bards };

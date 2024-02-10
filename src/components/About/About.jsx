@@ -25,8 +25,7 @@ function AboutUs() {
                 </Row>
             </Container>
         </div>
-        
-    )
+    );
 }
 
 export { AboutUs };

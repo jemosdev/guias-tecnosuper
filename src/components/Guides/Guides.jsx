@@ -21,7 +21,7 @@ function Guides() {
                 <Cards/>
             </div>
         </div>
-    )
+    );
 }
 
 export { Guides };

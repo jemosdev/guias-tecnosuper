@@ -14,7 +14,7 @@ function Home () {
             <AboutUs/>
             <ContactUs/>
         </>
-    )
+    );
 }
 
 export { Home };

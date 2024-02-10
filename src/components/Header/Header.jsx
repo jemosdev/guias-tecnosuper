@@ -9,7 +9,7 @@ function Header () {
             <Topbar/>
             <Hero/>
         </>
-    )
+    );
 }
 
 export { Header };

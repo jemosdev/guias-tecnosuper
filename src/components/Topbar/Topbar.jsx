@@ -1,6 +1,6 @@
 import React from "react";
 import "./Topbar.css";
-import logo from "../../assets/logo_tecnosuper.svg";
+import logo from "../../assets/logo-tecnosuper.svg";
 
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -19,7 +19,7 @@ function Topbar() {
                 
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <FontAwesomeIcon icon={faBars} />
-                    <i class="bi bi-gear"></i>
+                    <i className="bi bi-gear"></i>
                 </Navbar.Toggle>
 
                 <Navbar.Collapse className="">
@@ -32,7 +32,7 @@ function Topbar() {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-    )
+    );
 }
 
 export { Topbar };
