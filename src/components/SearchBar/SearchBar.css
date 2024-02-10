@@ -24,13 +24,13 @@
 }
 .search-container .search_icon {
     background-color: #54267D;
-    border-radius: 50%;
+    border-radius: 42%;
     width: 36px;
     height: 36px;
     position: absolute;
     cursor: pointer;
     top: 8%;
-    right: 1%;
+    right: 0.7%;
     transform: translateX(0%);
 }
 .search-container .search_icon .icon-magnifyingGlass {
