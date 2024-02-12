@@ -2,22 +2,33 @@
     background-color: #111;
 }
 .wavy-container {
+    position: relative;
     width: 100%;
     min-height: 300px;
 }
 
-.wave {
-    position: relative;
-}
-
 .wave svg {
-    position: relative;
     bottom: 0;
     left: 0;
     fill: #54267d;
+    z-index: 1;
 }
 
 .footer-contact {
-    margin-top: -30%;
-    margin-left: 15%;
+    position: absolute;
+    width: 44%;
+    bottom: 10%;
+    left: 30%;
+    z-index: 5;
+    font-size: 1.2rem;
+}
+
+.footer-contact img {
+    max-height: 120px;
+    max-width: 120px;
+}
+.footer-contact-col span {
+    display: inline-block;
+    vertical-align: auto;
+    padding-left: 2%;
 }
