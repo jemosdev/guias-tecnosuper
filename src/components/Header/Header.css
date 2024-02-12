@@ -1,1 +1,18 @@
+@media (max-width: 767px) {
+    .column-hero-2 {
+        order: -1;
+    }
+    .btn {
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero_left {
+        margin: 0 3%;
+    }
+    .btn {
+        margin-bottom: 5%;
+    }
+}
 

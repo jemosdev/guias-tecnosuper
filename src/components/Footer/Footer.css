@@ -4,7 +4,7 @@
 .wavy-container {
     position: relative;
     width: 100%;
-    min-height: 300px;
+    min-height: ;
 }
 
 .wave svg {
@@ -12,6 +12,13 @@
     left: 0;
     fill: #54267d;
     z-index: 1;
+}
+
+.wave {
+    background-image: url(http://www.w3.org/2000/svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .footer-contact {
