@@ -1,5 +1,5 @@
 .About-container {
-    background-color: #111;
+    background-color: /*#111*/ yellowgreen;
     height: 100vh;
 }
 
@@ -12,10 +12,7 @@
 .about-text {
     background: #54267D;
     font-size: 1.2rem;
-    padding: 3%;
-    padding-right: 22%;
-    min-height: 85%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .about-image img {
@@ -29,9 +26,9 @@
 
 @media (max-width: 767px) {
     .about-image img {
-        max-height: 40%;
-        max-width: 40%;
-        margin: -70%;
+        min-height: 90%;
+        min-width: 90%;
+        margin: 80%;
         margin-left: 70%;
     }
 }

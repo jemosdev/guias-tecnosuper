@@ -12,11 +12,11 @@ function AboutUs() {
                     <h1 className="About-title text-light pt-5 pb-4">Sobre <b>Nosotros</b></h1>
                 </Row>
                 <Row>
-                    <Col md={7}>
-                        <p className="about-text text-light rounded-4">Somos TecnoSuper una marca de distribución de tecnología para todo Colombia. Hacemos que la tecnología sea accesible para todos. No importa si estás reportado en sistemas de crédito, creemos que todos merecen la oportunidad de disfrutar de las últimas tendencias tecnológicas. Es por eso que ofrecemos opciones de crédito flexibles y con una excelente cuota inicial donde damos prioridad a tus necesidades y posibilidades, permitiéndote comenzar tu viaje tecnológico con facilidad.</p>
+                    <Col className="about-text text-light rounded-4 pt-4 px-5" sm={8} md={7} lg={8}>
+                        <p>Somos TecnoSuper una marca de distribución de tecnología para todo Colombia. Hacemos que la tecnología sea accesible para todos. No importa si estás reportado en sistemas de crédito, creemos que todos merecen la oportunidad de disfrutar de las últimas tendencias tecnológicas. Es por eso que ofrecemos opciones de crédito flexibles y con una excelente cuota inicial donde damos prioridad a tus necesidades y posibilidades, permitiéndote comenzar tu viaje tecnológico con facilidad.</p>
                     </Col>
-                    <Col md={5}>
-                        <div className="about-image">
+                    <Col className="about-image" sm={4} md={5} lg={4}>
+                        <div>
                             <div className="imageContainer">
                                 <img src={about_image} alt="about-image" className="about-image-img" />
                             </div>
