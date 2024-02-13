@@ -6,7 +6,7 @@ function Bards() {
     return(
         <div>
             <div className="imageLeftBard">
-            <img src={imageBards} alt="bard-image" className="hero_right-img" />
+            <img src={imageBards} alt="bard-image" className="hero_left-img" />
             </div>
             <div className="imageRightBard">
             <img src={imageBards} alt="bard-image" className="hero_right-img" />

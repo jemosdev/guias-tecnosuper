@@ -1,3 +1,15 @@
 .Cards-Container {
     width: 75%;
 }
+
+@media (max-width: 991px) {
+    .Cards-Container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    .Cards-Container {
+        width: 60%;
+    }
+}

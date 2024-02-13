@@ -1,5 +1,5 @@
 .Guide-container {
-    background-color: #111;
+    background-color: /*#111*/ yellow;
     position: relative;
     min-height: 100vh;
     width: 100%;
@@ -22,14 +22,60 @@
 .imageLeftBard {
     position: absolute;
     top: 4%;
-    left:10%;
+    left:12%;
     transform: translateX(-65%);
 }
 
 .imageRightBard {
     position: absolute;
-    width: 6%;
     bottom: 4%;
-    right: 8%;
+    right: 4%;
     transform: translateX(10%) translateY(10%);
+}
+
+@media (max-width: 991px) {
+    .imageLeftBard img {
+        width: 70%;
+        height: 70%;
+    }
+    .imageRightBard img {
+        width: 70%;
+        height: 70%;
+    }
+    .imageLeftBard {
+        top: 7%;
+        left:14%;
+    }
+    .imageRightBard {
+        bottom: 7%;
+        right: -1%;
+    }
+}
+
+@media (max-width: 767px) {
+    .imageLeftBard {
+        top: 4%;
+        left:16%;
+    }
+    .imageRightBard {
+        bottom: 2%;
+        right: -2%;
+    }
+}
+
+@media (max-width: 575px) {
+    .imageLeftBard img {
+        width: 40%;
+        height: 40%;
+    }
+    .imageRightBard img {
+        width: 40%;
+        height: 40%;
+    }
+    .imageLeftBard {
+        left:20%;
+    }
+    .imageRightBard {
+        right: -10%;
+    }
 }
