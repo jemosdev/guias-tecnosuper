@@ -4,38 +4,45 @@
 .wavy-container {
     position: relative;
     width: 100%;
-    min-height: ;
+    height: 280px;
 }
 
-.wave svg {
+.wave {
+    position: absolute;
     bottom: 0;
     left: 0;
+    width: 100%;
     fill: #54267d;
     z-index: 1;
 }
 
-.wave {
-    background-image: url(http://www.w3.org/2000/svg);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .footer-contact {
     position: absolute;
-    width: 44%;
-    bottom: 10%;
-    left: 30%;
+    width: 50%;
+    bottom: 16%;
+    left: 25%;
     z-index: 5;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 
 .footer-contact img {
-    max-height: 120px;
-    max-width: 120px;
+    max-height: 110px;
+    min-height: 30px;
+    max-width: 110px;
+    min-width: 30px;
 }
+
 .footer-contact-col span {
     display: inline-block;
     vertical-align: auto;
     padding-left: 2%;
+}
+
+@media (max-width: 767px) {
+    .footer-contact {
+        width: 40%;
+        bottom: 4%;
+        left: 30%;
+        font-size: 0.9rem;
+    }
 }

@@ -13,9 +13,9 @@ function Footer() {
                 <div className="wavy-container">
                     <section className="footer-contact text-light p-2">
                         <Row className="footer-contact-col">
-                            <Col><FontAwesomeIcon icon={faInstagram} /><span>@tecnosuper.co</span></Col>
-                            <Col><img src={logo} alt="logo" /></Col>
-                            <Col><FontAwesomeIcon icon={faFacebook} /><span>@tecnosuper.co</span></Col>
+                            <Col xs={4} md={4} className="d-flex align-items-center justify-content-end" ><FontAwesomeIcon icon={faInstagram} /><span>@tecnosuper.co</span></Col>
+                            <Col xs={4} md={4} className="d-flex align-items-center justify-content-center" ><img src={logo} alt="logo" /></Col>
+                            <Col xs={4} md={4} className="d-flex align-items-center justify-content-start" ><FontAwesomeIcon icon={faFacebook} /><span>@tecnosuper.co</span></Col>
                         </Row>
                     </section>
                     <section className="wave">
