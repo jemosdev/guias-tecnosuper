@@ -61,6 +61,9 @@
         bottom: 2%;
         right: -2%;
     }
+    .Guide-cards {
+        padding-top: 22%;
+    }
 }
 
 @media (max-width: 575px) {
@@ -73,9 +76,9 @@
         height: 40%;
     }
     .imageLeftBard {
-        left:20%;
+        left:30%;
     }
     .imageRightBard {
-        right: -10%;
+        right: -16%;
     }
 }

@@ -23,7 +23,7 @@ function Hero() {
                     <Col md={6} className="column-hero-2">
                         <div className="hero_right">
                             <div className="imageContainer">
-                                <img src={hero_right} alt="hero-image" className="hero_right-img" />
+                                <img src={hero_right} alt="hero-image" className="hero_right-img text-align-center" />
                             </div>
                         </div>
                     </Col>

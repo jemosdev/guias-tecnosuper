@@ -1,5 +1,5 @@
 .About-container {
-    background-color: /*#111*/ yellowgreen;
+    background-color: #111;
     height: 100vh;
 }
 
@@ -55,14 +55,22 @@
         font-size: 1.0rem;
     }
     .about-text p {
-        padding: 4% 24% 4% 1%;
+        padding: 3% 24% 3% 1%;
     }
     .about-image img {
-        width: 60%;
-        left: 32%;
+        width: 62%;
+        left: 31%;
         margin: -18%;
     }
 }
 @media (max-width: 575px) {
-    
+    .about-text {
+        font-size: 1.1rem;
+    }
+    .about-image img {
+        display: none;
+        width: 62%;
+        left: 31%;
+        margin: -18%;
+    }
 }

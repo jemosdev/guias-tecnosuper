@@ -37,3 +37,15 @@
     height: 90%;
     object-fit: cover;
 }
+
+@media (max-width: 991px) {
+    .column-hero-2 .hero_right {
+        width: 140%;
+    }
+}
+@media (max-width: 575px) {
+    .column-hero-2 {
+        display: flex;
+        justify-content: center;
+    }
+}
