@@ -12,6 +12,9 @@
 .about-text {
     background: #54267D;
     font-size: 1.4rem;
+    /*white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
 }
 
 .about-text p {
@@ -43,9 +46,9 @@
         padding: 2% 18% 2% 2%;
     }
     .about-image img {
-        left: 46%;
+        left: 44%;
         margin: -12%;
-        transform: translateX(70%);
+        transform: translateX(78%);
     }
 }
 @media (max-width: 767px) {
@@ -56,9 +59,10 @@
         padding: 3% 24% 3% 1%;
     }
     .about-image img {
-        width: 62%;
-        left: 31%;
+        width: 42%;
+        left: 42%;
         margin: -18%;
+        transform: translateX(80%);
     }
 }
 @media (max-width: 575px) {
