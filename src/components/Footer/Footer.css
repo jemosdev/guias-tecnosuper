@@ -1,53 +1,16 @@
 .footer {
     background-color: #111;
 }
-.wavy-container {
-    position: relative;
-    width: 100%;
-    height: 280px;
+
+.footer .wave1 {
+    background: url(../../assets/wave1.svg) no-repeat;
+    background-size: 100% auto;
+    background-position-y: 70%;
+    background-position-x: left;
 }
 
-.wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    fill: #54267d;
-    z-index: 1;
-}
-
-.footer-contact {
-    position: absolute;
-    width: 50%;
-    bottom: 15%;
-    left: 25%;
-    z-index: 5;
-    font-size: 1.0rem;
-}
-
-.footer-contact img {
-    max-height: 110px;
-    min-height: 30px;
-    max-width: 110px;
-    min-width: 30px;
-}
-
-.footer-contact-col span {
-    display: inline-block;
-    vertical-align: auto;
-    padding-left: 2%;
-}
-
-@media (max-width: 991px) {
-    .footer-contact {
-        bottom: 8%;
-    }
-}
-@media (max-width: 767px) {
-    .footer-contact {
-        width: 40%;
-        bottom: 4%;
-        left: 30%;
-        font-size: 0.9rem;
-    }
+.footer .wave2 {
+    background: url(../../assets/wave2.svg) no-repeat;
+    background-size: 100% auto;
+    background-position-x: left;
 }

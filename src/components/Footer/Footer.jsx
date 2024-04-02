@@ -2,27 +2,33 @@ import React from "react";
 import "./Footer.css";
 import logo from "../../assets/logo-tecnosuper.svg";
 
-import { Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 function Footer() {
     return (
-        <footer>
-            <Col md={12}>
-                <div className="wavy-container">
-                    <section className="footer-contact text-light p-2">
-                        <Row className="footer-contact-col">
-                            <Col xs={4} md={4} className="d-flex align-items-center justify-content-end" ><FontAwesomeIcon icon={faInstagram} /><span>@tecnosuper.co</span></Col>
-                            <Col xs={4} md={4} className="d-flex align-items-center justify-content-center" ><img src={logo} alt="logo" /></Col>
-                            <Col xs={4} md={4} className="d-flex align-items-center justify-content-start" ><FontAwesomeIcon icon={faFacebook} /><span>@tecnosuper.co</span></Col>
-                        </Row>
-                    </section>
-                    <section className="wave">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fillOpacity="1" d="M0,32L40,74.7C80,117,160,203,240,234.7C320,267,400,245,480,202.7C560,160,640,96,720,106.7C800,117,880,203,960,208C1040,213,1120,139,1200,106.7C1280,75,1360,85,1400,90.7L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
-                    </section>
+        <footer className="footer">
+            <div className="wave1">
+                <div className="wave2">
+                    <Container className="p-5 d-flex text-white text-center align-items-center justify-content-center">
+                        <div className="px-4">
+                            <FontAwesomeIcon icon={faInstagram} />
+                            <span className="ml-2">@tecnosuper.co</span>
+                        </div>
+
+                        <div>
+                            <img src={logo} alt="logo" height="80px" />
+                        </div>
+
+
+                        <div className="px-4">
+                            <FontAwesomeIcon icon={faFacebook} />
+                            <span className="ml-2">@tecnosuper.co</span>
+                        </div>
+                    </Container>
                 </div>
-            </Col>
+            </div>
         </footer>
     );
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Guides.css";
-import { Bards } from "../Bards/Bards";
 import { Cards } from "../Cards/Cards";
 import { SearchBar } from "../SearchBar/SearchBar";
 
@@ -9,17 +8,20 @@ function Guides() {
 
     return (
         <div className="Guide-container">
-            <div>
-                <Bards/>
-            </div>
-            <div className="Guide-text text-light d-flex justify-content-center">
-                <h1>Guias <b>Tecnosuper</b></h1>
-            </div>
-            <div>
-                <SearchBar/>
-            </div>
-            <div className="Guide-cards text-light d-flex justify-content-center">
-                <Cards/>
+            <div className="bgTopLeft">
+                <div className="bgBottomRight">
+                    <div className="container">
+                        <div className="Guide-text text-light text-center pb-4">
+                            <h1>Guias <b>Tecnosuper</b></h1>
+                        </div>
+
+                        <SearchBar/>
+
+                        <div className="pb-4"/>
+
+                        <Cards/>
+                    </div>
+                </div>
             </div>
         </div>
     );

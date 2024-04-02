@@ -5,32 +5,49 @@
 
 .About-container b {
     background: #7E35E4;
-    -webkit-background-clip: text; /* no necesariamente compatible */
+    -webkit-background-clip: text;
+    /* no necesariamente compatible */
     color: transparent;
 }
 
 .about-text {
-    background: #54267D;
+    background: linear-gradient(to top, #54267D 0%, #7E35E4 30%, #111 100%);
     font-size: 1.4rem;
     /*white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;*/
 }
 
-.about-text p {
-    padding: 2% 16% 2% 2%;
+.About-image {
+    display: none;
 }
 
-.about-image img {
+@media screen and (min-width: 992px) {
+
+    /* 
+    Styles for high-resolution displays go here
+    @see https://getbootstrap.com/docs/5.0/layout/breakpoints/ 
+    */
+    .About-image {
+        display: block;
+        margin: -30px -8% -30px 30px;
+    }
+}
+
+/* .about-text p {
+    padding: 2% 16% 2% 2%;
+} */
+
+/* .about-image img {
     position: absolute;
     width: 30%;
     margin: -10%;
     left: 48%;
     top: 24%;
     transform: translateX(76%);
-}
+} */
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .about-image img {
         width: 40%;
         left: 44%;
@@ -75,4 +92,4 @@
         left: 31%;
         margin: -18%;
     }
-}
+} */

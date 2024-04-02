@@ -1,15 +1,9 @@
-.Cards-Container {
-    width: 75%;
-}
-
-@media (max-width: 991px) {
-    .Cards-Container {
-        width: 80%;
-    }
-}
-
-@media (max-width: 767px) {
-    .Cards-Container {
-        width: 60%;
-    }
+.Cards-grid {
+    display: grid;
+    gap: 10px;
+    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 350px));
+    grid-template-rows:repeat(auto-fill, minmax(200px, 1fr));
+    /* grid-auto-rows: fit-content(400px); */
+    /* align-items: stretch; */
 }
