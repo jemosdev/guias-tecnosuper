@@ -6,7 +6,7 @@ import hero_right from "../../assets/imageC-1.svg";
 
 function Hero() {
     return (
-        <div className="Hero-container">
+        <div className="Hero-container pb-4">
             <Container>
                 <Row>
                     <Col md={6} className="column-hero-1">
@@ -20,7 +20,7 @@ function Hero() {
                             </button>
                         </div>
                     </Col>
-                    <Col md={6} className="column-hero-2">
+                    <Col md={6} className="column-hero-2 pb-2">
                         <div className="hero_right">
                             <div className="imageContainer">
                                 <img src={hero_right} alt="hero-image" className="hero_right-img text-align-center" />

@@ -5,5 +5,4 @@
     grid-template-columns: repeat(auto-fill, minmax(min-content, 350px));
     grid-template-rows:repeat(auto-fill, minmax(200px, 1fr));
     /* grid-auto-rows: fit-content(400px); */
-    /* align-items: stretch; */
 }

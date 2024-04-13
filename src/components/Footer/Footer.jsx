@@ -16,12 +16,9 @@ function Footer() {
                             <FontAwesomeIcon icon={faInstagram} />
                             <span className="ml-2">@tecnosuper.co</span>
                         </div>
-
                         <div>
-                            <img src={logo} alt="logo" height="80px" />
+                            <img src={logo} alt="logo" height="52px" />
                         </div>
-
-
                         <div className="px-4">
                             <FontAwesomeIcon icon={faFacebook} />
                             <span className="ml-2">@tecnosuper.co</span>

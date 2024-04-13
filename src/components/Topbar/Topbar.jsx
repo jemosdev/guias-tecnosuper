@@ -16,12 +16,10 @@ function Topbar() {
                 <Navbar.Brand href="#home">
                     <img src={logo} alt="logo" />
                 </Navbar.Brand>
-                
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <FontAwesomeIcon icon={faBars} />
                     <i className="bi bi-gear"></i>
                 </Navbar.Toggle>
-
                 <Navbar.Collapse className="">
                     <Nav className="ms-auto">
                         <Nav.Link href="#home" className="text-light">Home</Nav.Link>

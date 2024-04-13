@@ -6,11 +6,11 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 function SearchBar() {
     return (
-        <div className='SearchBar-wrapper d-flex justify-content-center'>
+        <div className='searchbar-wrapper d-flex justify-content-center'>
             <div className="search-container">
                 <input 
                 type='search' 
-                className="SearchBar rounded-4" 
+                className="searchbar rounded-4" 
                 placeholder='Buscar guías'
                 />
                 <span className="search_icon border-0"><FontAwesomeIcon icon={faMagnifyingGlass} className="icon-magnifyingGlass" /></span>

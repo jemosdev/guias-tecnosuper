@@ -1,9 +1,9 @@
-.About-container {
+.about-container {
     background-color: #111;
     height: 100vh;
 }
 
-.About-container b {
+.about-container b {
     background: #7E35E4;
     -webkit-background-clip: text;
     /* no necesariamente compatible */
@@ -18,7 +18,7 @@
     text-overflow: ellipsis;*/
 }
 
-.About-image {
+.about-image {
     display: none;
 }
 
@@ -28,68 +28,24 @@
     Styles for high-resolution displays go here
     @see https://getbootstrap.com/docs/5.0/layout/breakpoints/ 
     */
-    .About-image {
+    .about-image {
         display: block;
         margin: -30px -8% -30px 30px;
     }
 }
-
-/* .about-text p {
-    padding: 2% 16% 2% 2%;
-} */
-
-/* .about-image img {
-    position: absolute;
-    width: 30%;
-    margin: -10%;
-    left: 48%;
-    top: 24%;
-    transform: translateX(76%);
-} */
-
-/* @media (max-width: 1200px) {
-    .about-image img {
-        width: 40%;
-        left: 44%;
-        margin: -12%;
-        transform: translateX(68%);
-    }
-}
+/*
 @media (max-width: 991px) {
     .about-text {
         font-size: 1.1rem;
-    }
-    .about-text p {
-        padding: 2% 18% 2% 2%;
-    }
-    .about-image img {
-        left: 44%;
-        margin: -12%;
-        transform: translateX(78%);
     }
 }
 @media (max-width: 767px) {
     .about-text {
         font-size: 1.0rem;
     }
-    .about-text p {
-        padding: 3% 24% 3% 1%;
-    }
-    .about-image img {
-        width: 42%;
-        left: 42%;
-        margin: -18%;
-        transform: translateX(80%);
-    }
 }
 @media (max-width: 575px) {
     .about-text {
         font-size: 1.1rem;
-    }
-    .about-image img {
-        display: none;
-        width: 62%;
-        left: 31%;
-        margin: -18%;
     }
 } */
