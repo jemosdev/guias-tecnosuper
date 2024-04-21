@@ -10,7 +10,7 @@ function SearchBar() {
             <div className="search-container">
                 <input 
                 type='search' 
-                className="searchbar rounded-4" 
+                className="searchbar rounded-4"
                 placeholder='Buscar guías'
                 />
                 <span className="search_icon border-0"><FontAwesomeIcon icon={faMagnifyingGlass} className="icon-magnifyingGlass" /></span>

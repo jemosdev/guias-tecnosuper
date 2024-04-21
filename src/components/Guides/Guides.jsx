@@ -2,12 +2,11 @@ import React from "react";
 import "./Guides.css";
 import { Cards } from "../Cards/Cards";
 import { SearchBar } from "../SearchBar/SearchBar";
-import { SearchBar2 } from "../SearchBar2/SearchBar2";
 
 function Guides() {
 
     return (
-        <div className="Guide-container">
+        <div className="Guide-container p-4">
             <div className="bgTopLeft">
                 <div className="bgBottomRight">
                     <div className="container">
@@ -16,7 +15,6 @@ function Guides() {
                         </div>
 
                         <SearchBar/>
-                        {/* <SearchBar2/> */}
 
                         <div className="pb-4"/>
 
