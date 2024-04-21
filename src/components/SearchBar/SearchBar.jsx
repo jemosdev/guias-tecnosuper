@@ -6,7 +6,7 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 function SearchBar() {
     return (
-        <div className='searchbar-wrapper d-flex justify-content-center'>
+        <div className='searchbar-wrapper p-4 d-flex justify-content-center'>
             <div className="search-container">
                 <input 
                 type='search' 
