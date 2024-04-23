@@ -5,27 +5,29 @@ import logo from "../../assets/logo-tecnosuper.svg";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
+import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+
 
 function Topbar() {
     return (
         <Navbar expand="lg" sticky="top">
             <Container fluid>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand as={Link} to="/">
                     <img src={logo} alt="logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <FontAwesomeIcon icon={faBars} />
-                    <i className="bi bi-gear"></i>
+                    {/* <i className="bi bi-gear"></i> */}
                 </Navbar.Toggle>
-                <Navbar.Collapse className="">
+                <Navbar.Collapse>
                     <Nav className="ms-auto">
-                        <Nav.Link href="#home" className="text-light">Home</Nav.Link>
-                        <Nav.Link href="#home" className="text-light">Guias</Nav.Link>
-                        <Nav.Link href="#home" className="text-light">Nosotros</Nav.Link>
-                        <Nav.Link href="#home" className="text-light">Contactanos</Nav.Link>
+                        <Link to="/" className="nav-link text-light">Home</Link>
+                        <Link to="/guides" className="nav-link text-light">Guias</Link>
+                        <Link to="#about" className="nav-link text-light">Nosotros</Link>
+                        <Link to="#contact" className="nav-link text-light">Contactanos</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

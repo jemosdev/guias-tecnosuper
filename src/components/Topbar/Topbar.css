@@ -10,3 +10,7 @@
     color: #fff;
 }
 
+.navbar-light .nav-link:hover {
+    /* text-decoration: underline; */
+    border-bottom: 2px solid #54267D;
+}
