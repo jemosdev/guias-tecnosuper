@@ -17,7 +17,7 @@ function Footer() {
                             <span className="ml-2">@tecnosuper.co</span>
                         </div>
                         <div>
-                            <img src={logo} alt="logo" height="52px" />
+                            <img src={logo} alt="logo" height="48px" />
                         </div>
                         <div className="px-4">
                             <FontAwesomeIcon icon={faFacebook} />

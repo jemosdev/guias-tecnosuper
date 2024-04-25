@@ -1,10 +1,11 @@
 import React from "react";
 import "./Contact.css";
 
-import { Container, Row} from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
+import { Footer } from "../Footer/Footer";
 
 function Contact() {
-    return(
+    return (
         <div className="Contact-container p-4">
             <Container>
                 <Row>
@@ -17,21 +18,21 @@ function Contact() {
                         <form>
                             <div className="form-row d-flex justify-content-between pb-4">
                                 <div className="form-group col-sm-4 col-md-5">
-                                <input type="text" className="form-control rounded-3 border-0 text-light" placeholder="Nombre"/>
+                                    <input type="text" className="form-control rounded-3 border-0 text-light" placeholder="Nombre" />
                                 </div>
                                 <div className="form-group col-sm-4 col-md-5">
-                                <input type="text" className="form-control rounded-3 border-0 text-light" placeholder="Apellido"/>
+                                    <input type="text" className="form-control rounded-3 border-0 text-light" placeholder="Apellido" />
                                 </div>
                             </div>
                             <div className="form-group col-md-12 pb-4">
-                                <input type="text" className="form-control rounded-3 border-0 text-light p-4" placeholder="¡Escribe aquí si tienes una duda!"/>
+                                <input type="text" className="form-control rounded-3 border-0 text-light p-4" placeholder="¡Escribe aquí si tienes una duda!" />
                             </div>
                             <div className="btn-container d-flex justify-content-center">
                                 <button type="submit" className="btn fw-bold col-6 mt-2 custom-button">Enviar</button>
                             </div>
                         </form>
                     </div>
-                </Row>                
+                </Row>
             </Container>
         </div>
     )
