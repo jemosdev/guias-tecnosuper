@@ -6,7 +6,7 @@ import about_image from "../../assets/about-image.svg";
 
 function AboutUs() {
     return (
-        <div className="about-container pb-4">
+        <div id="#about" className="about-container pb-4">
         <Container >
             <h1 className="about-title text-light pt-5 pb-4">Sobre <b>Nosotros</b></h1>
             <div className="about-text rounded-4 d-flex justify-content-between" >

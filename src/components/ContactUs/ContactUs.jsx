@@ -6,7 +6,7 @@ import { Footer } from "../Footer/Footer";
 
 function ContactUs() {
     return (
-        <div className="contact-us">
+        <div id="#contactus" className="contact-us">
             <Contact/>
             <Footer/>
         </div>
