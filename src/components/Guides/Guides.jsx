@@ -2,7 +2,7 @@ import React from "react";
 import "./Guides.css";
 import { Cards } from "../Cards/Cards";
 
-function Guides() {
+function Guides({ searchValue }) {
 
     return (
         <div className="Guide-container p-4">
@@ -15,7 +15,7 @@ function Guides() {
 
                         <div className="pb-4"/>
 
-                        <Cards/>
+                        <Cards searchValue={ searchValue } />
                     </div>
                 </div>
             </div>

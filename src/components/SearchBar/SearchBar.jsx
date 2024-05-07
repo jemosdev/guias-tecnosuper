@@ -1,10 +1,8 @@
 import React from "react";
 import './SearchBar.css';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-
-function SearchBar() {
+function SearchBar({searchValue, setSearchValue}) {
+    
     return (
         <div className='searchbar-wrapper p-4 d-flex justify-content-center'>
             <div className="search-container">
@@ -12,8 +10,11 @@ function SearchBar() {
                 type='search' 
                 className="searchbar rounded-4"
                 placeholder='Buscar guías'
-                />
-                <span className="search_icon border-0"><FontAwesomeIcon icon={faMagnifyingGlass} className="icon-magnifyingGlass" /></span>
+                value={searchValue}
+                onChange={(event) => {
+                    setSearchValue(event.target.value);
+                }}
+                ></input>
             </div>
         </div>
     );

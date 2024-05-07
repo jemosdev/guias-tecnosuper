@@ -25,20 +25,3 @@
 .search-container {
     position: relative;
 }
-.search-container .search_icon {
-    background-color: #54267D;
-    border-radius: 42%;
-    width: 36px;
-    height: 36px;
-    position: absolute;
-    cursor: pointer;
-    top: 8%;
-    right: 0.7%;
-    transform: translateX(0%);
-}
-.search-container .search_icon .icon-magnifyingGlass {
-    color: #fff;
-    width: 100%;
-    margin-top: 14%;
-    height: 70%;
-}
