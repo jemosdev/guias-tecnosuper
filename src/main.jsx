@@ -1,29 +1,34 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import './index.css'
 
 import App from './App.jsx';
-import HomePage from './pages/HomePage.jsx'
-import GuidePage from './pages/GuidePage.jsx'
-import NotFoundPage from './pages/NotFoundPage.jsx'
-import './index.css'
+import { HomePage } from './pages/HomePage.jsx';
+import { GuidePage } from './pages/GuidePage.jsx';
+import { NotFoundPage } from './pages/NotFoundPage.jsx';
+import { GuideDetailPage } from './pages/GuideDetailPage.jsx';
 
 const router = createBrowserRouter([
   {
-    path:'/',
+    path: '/',
     element: <HomePage />,
-    errorElement: <NotFoundPage/>
+    errorElement: <NotFoundPage />,
   },
   {
-    path:'/guides',
+    path: '/guides',
     element: <GuidePage />,
+  },
+  {
+    path: '/guides/:guidesId',
+    element: <GuideDetailPage/>
   }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} >
-    <App />
+      <App />
     </RouterProvider>
   </React.StrictMode>
 );

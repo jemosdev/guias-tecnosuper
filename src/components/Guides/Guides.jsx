@@ -2,7 +2,7 @@ import React from "react";
 import "./Guides.css";
 import { Cards } from "../Cards/Cards";
 
-function Guides({ searchValue }) {
+function Guides({ searchValue, specificIds }) {
 
     return (
         <div className="Guide-container p-4">

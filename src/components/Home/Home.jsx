@@ -7,10 +7,11 @@ import { ContactUs } from "../ContactUs/ContactUs";
 
 
 function Home () {
+    
     return (
         <>
             <Header/>
-            <Guides/>
+            <Guides />
             <AboutUs/>
             <ContactUs/>
         </>

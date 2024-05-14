@@ -8,7 +8,13 @@ function Cards({ searchValue }) {
     const { data, isLoading, error } = useFetch("https://nexyapp-f3a65a020e2a.herokuapp.com/zoho/v1/console/tecnoGuides");
 
     // Filter data based on searchValue
-    const filteredData = data?.filter(tecnoGuides => tecnoGuides.description.toLowerCase().includes(searchValue.toLowerCase())
+    const filteredData = data?.filter(tecnoGuides => {
+        //verify if searchvalue is defined
+        if (!searchValue) {
+            return true;
+        }
+        return tecnoGuides.description && tecnoGuides.description.toLowerCase().includes(searchValue.toLowerCase())
+    }
     );
 
     // Loading status handling API
@@ -29,8 +35,10 @@ function Cards({ searchValue }) {
                     filteredData?.map((tecnoGuides) => (
                         <Card
                             key={tecnoGuides.code}
-                            title={tecnoGuides.ID}
-                            description={tecnoGuides.description}
+                            description={tecnoGuides.description.slice(0,50)}
+                            details={tecnoGuides.details.slice(5,25)}
+                            id={tecnoGuides.ID}
+                            code= {tecnoGuides.code}
                         />
                     ))
                 ) : (

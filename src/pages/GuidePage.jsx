@@ -1,4 +1,5 @@
 import React from "react";
+import { useSearchParams } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Topbar } from "../components/Topbar/Topbar.jsx";
@@ -6,21 +7,19 @@ import { SearchBar } from "../components/SearchBar/SearchBar.jsx";
 import { Guides } from "../components/Guides/Guides.jsx";
 
 function GuidePage() {
-    const [searchValue, setSearchValue] = React.useState('');
+    
+    let [searchParams] = useSearchParams();
+    let q = searchParams.get("q");
 
-    console.log('Usuarios buscan todos de ' + searchValue);
     return (
         <div>
-            <Topbar/>
-            <SearchBar 
-            searchValue={searchValue} 
-            setSearchValue={setSearchValue}
-            />
-            <Guides 
-            searchValue={searchValue}
+            <Topbar />
+            <SearchBar />
+            <Guides
+                searchValue={q}
             />
         </div>
     );
 }
 
-export default GuidePage;
+export { GuidePage };
