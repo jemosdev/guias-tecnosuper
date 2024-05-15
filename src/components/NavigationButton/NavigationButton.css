@@ -1,0 +1,11 @@
+.custom-button {
+    background: #7E35E4;
+    background: linear-gradient(to bottom, #7E35E4 0%, #54267D 100%);
+    border-color: #54267D;
+    color: #fff;
+}
+
+.Hero-container .custom-button:hover {
+    background: #fff;
+    color:  #54267D;
+}

@@ -16,18 +16,6 @@
     color: transparent;
 }
 
-.Hero-container .custom-button {
-    background: #7E35E4;
-    background: linear-gradient(top, #7E35E4 0%, #54267D 100%);
-    border-bottom: #54267D;
-    color: #fff;
-}
-
-.Hero-container .custom-button:hover {
-    background: #fff;
-    color:  #54267D;
-}
-
 .imageContainer .hero_right-img {
     max-width: 100%;
     height: auto;

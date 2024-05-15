@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Topbar } from "../components/Topbar/Topbar.jsx";
+import { NavigationButton } from "../components/NavigationButton/NavigationButton.jsx";
 
 function NotFoundPage() {
     return (
@@ -9,9 +9,7 @@ function NotFoundPage() {
             <Topbar />
             <h1>404 Not Found </h1>
             <div>
-                <Link to="/" className="btn btn-primary fw-bold border-0 p-3">
-                    Regresar a Home
-                </Link>
+                <NavigationButton to={'/'}>Back Home</NavigationButton>
             </div>
         </div>
     );

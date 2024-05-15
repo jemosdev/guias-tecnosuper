@@ -11,6 +11,7 @@ function GuideDetailPage() {
         <div>
             <Topbar />
             <h1>Guides of cards</h1>
+            <p>Sed sit amet rutrum mi. Nulla rutrum, nisi eget luctus laoreet, erat enim interdum augue, a lobortis nibh diam vitae turpis. In semper tortor vel ultricies sollicitudin. Ut sollicitudin eget enim auctor posuere. Integer imperdiet auctor elit, eget finibus felis ullamcorper id.</p>
         </div>
     );
 }

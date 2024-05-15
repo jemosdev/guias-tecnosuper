@@ -3,7 +3,7 @@ import "./Hero.css";
 
 import { Container, Row, Col } from "react-bootstrap";
 import hero_right from "../../assets/imageC-1.svg";
-import { Link } from "react-router-dom";
+import { NavigationButton } from "../NavigationButton/NavigationButton";
 
 function Hero() {
     return (
@@ -16,9 +16,7 @@ function Hero() {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem, architecto vitae culpa fugiat saepe voluptatibus ea dicta ipsum enim! Dolorum nulla incidunt sapiente ex harum. Maxime explicabo repudiandae sequi?</p>
                         </div>
                         <div>
-                            <Link to="/guides" className="btn fw-bold border-0 custom-button p-3">
-                                VER GUIAS
-                            </Link>
+                            <NavigationButton to={"/guides"}>VER GUIAS</NavigationButton>
                         </div>
                     </Col>
                     <Col md={6} className="column-hero-2 pb-2">
