@@ -3,9 +3,10 @@ import "./Cards.css";
 import { Card } from "../Card/Card";
 import { useFetch } from "../../useFetch";
 
-
 function Cards({ searchValue }) {
-    const { data, isLoading, error } = useFetch("https://nexyapp-f3a65a020e2a.herokuapp.com/zoho/v1/console/tecnoGuides");
+    const URL = `${import.meta.env.VITE_API_URL}/zoho/v1/console/tecnoGuides`;
+
+    const { data, isLoading, error } = useFetch(URL);
 
     // Filter data based on searchValue
     const filteredData = data?.filter(tecnoGuides => {
@@ -32,13 +33,10 @@ function Cards({ searchValue }) {
             {
                 //is not null or undefined - ternary operator
                 filteredData && filteredData.length > 0 ? (
-                    filteredData?.map((tecnoGuides) => (
+                    filteredData?.map((card) => (
                         <Card
-                            key={tecnoGuides.code}
-                            description={tecnoGuides.description.slice(0,50)}
-                            details={tecnoGuides.details.slice(5,25)}
-                            id={tecnoGuides.ID}
-                            code= {tecnoGuides.code}
+                            key={card.code}
+                            card={card}
                         />
                     ))
                 ) : (

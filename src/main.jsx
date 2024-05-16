@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     element: <GuidePage />,
   },
   {
-    path: '/guides/:guidesId',
+    path: '/guides/:description/id/:guideId',
     element: <GuideDetailPage/>
   }
 ]);

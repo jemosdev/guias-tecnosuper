@@ -26,8 +26,8 @@ function Topbar() {
                     <Nav className="ms-auto">
                         <Link to="/" className="nav-link text-light">Home</Link>
                         <Link to="/guides" className="nav-link text-light">Guias</Link>
-                        <Link to="#about" className="nav-link text-light">Nosotros</Link>
-                        <Link to="#contactus" className="nav-link text-light">Contactanos</Link>
+                        <Link to="/about" className="nav-link text-light">Nosotros</Link>
+                        <Link to="/contactus" className="nav-link text-light">Contactanos</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

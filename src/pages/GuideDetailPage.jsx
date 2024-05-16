@@ -1,56 +1,56 @@
-/* import React, { useState, useEffect } from 'react';*/
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Topbar } from "../components/Topbar/Topbar";
+import { Container } from "react-bootstrap";
+
 import { useParams } from "react-router-dom";
+import { NavigationButton } from "../components/NavigationButton/NavigationButton";
+import { useFetch } from "../useFetch";
 
 function GuideDetailPage() {
-    //useParams return all parameters available of the specific page
-    const params = useParams();
-    console.log(params);
-    return(
+    //useParams return all parameters available of the specific page 
+    const { guideId } = useParams();
+
+    const URL = `${import.meta.env.VITE_API_URL}/zoho/v1/console/tecnoGuides/${guideId}`;
+    const { data, isLoading, error } = useFetch(URL);
+
+    if (isLoading) {
+        return <p>Ta cargando, tenga paciencia</p>
+    }
+
+    if (error) {
+        return <p>Cógela suave, intenta de nuevo luego</p>
+    }
+
+    if (!data) {
+        return <p>Papi, esta guia no existe, busca oficio</p>
+    }
+
+    const { publicLink, description, details } = data;
+
+    return (
         <div>
             <Topbar />
-            <h1>Guides of cards</h1>
-            <p>Sed sit amet rutrum mi. Nulla rutrum, nisi eget luctus laoreet, erat enim interdum augue, a lobortis nibh diam vitae turpis. In semper tortor vel ultricies sollicitudin. Ut sollicitudin eget enim auctor posuere. Integer imperdiet auctor elit, eget finibus felis ullamcorper id.</p>
+            <Container >
+                <div className="guideDetail-container py-4 ">
+                    <NavigationButton to={"/guides"}>VOLVER</NavigationButton>
+                    <h2 className=" d-flex justify-content-center pt-2">{description}</h2>
+                </div>
+                <div >
+                    <div className="d-flex justify-content-center pt-2">
+                        {/* crear un componente para manejar todos los formatos que el back devuelva e.g.: <Media src={publicLink} alt={description}/> */}
+                        {publicLink.endsWith(".jpg") && <img src={publicLink} alt={description} lazy style={{ width: '480px', height: '480px' }}/>}
+                        {publicLink.endsWith(".mp4") && <video> <source src={publicLink} type="video/mp4" style={{ width: '480px', height: '480px' }}/> </video>}
+                        {/* Texto a etiqueta html */}
+                    </div>
+                    <div>
+                        <div dangerouslySetInnerHTML={{ __html: details }} />
+                    </div>
+                </div>
+            </Container>
         </div>
     );
 }
 
 export { GuideDetailPage };
-
-/* function GuideDetailPage() {
-    const { code } = useParams();
-    const [guide, setGuide] = useState(null);
-    const [isLoading, setIsLoading] = useState(false);
-    const [error, setError] = useState(null);
-
-    useEffect(() => {
-        const fetchGuide = async () => {
-            setIsLoading(true);
-            try {
-                const response = await fetch(`https://nexyapp-f3a65a020e2a.herokuapp.com/zoho/v1/console/tecnoGuides/${code}`);
-                const data = await response.json();
-                setGuide(data);
-                setIsLoading(false);
-            } catch (err) {
-                setError('Failed to fetch guide');
-                setIsLoading(false);
-            }
-        };
-
-        fetchGuide();
-    }, [code]);
-
-    if (isLoading) return <p>Loading...</p>;
-    if (error) return <p>{error}</p>;
-    if (!guide) return <p>No guide found!</p>;
-
-    return (
-        <div>
-            <h1>{guide.title}</h1>
-            <img src={guide.imageUrl} alt={guide.title} />
-            <p>{guide.description}</p>
-        </div>
-    );
-} */
-
