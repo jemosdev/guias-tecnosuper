@@ -13,6 +13,7 @@ function GuideDetailPage() {
     const { guideId } = useParams();
 
     const URL = `${import.meta.env.VITE_API_URL}/zoho/v1/console/tecnoGuides/${guideId}`;
+    
     const { data, isLoading, error } = useFetch(URL);
 
     if (isLoading) {
@@ -41,6 +42,7 @@ function GuideDetailPage() {
                     <div className="d-flex justify-content-center pt-2">
                         {/* crear un componente para manejar todos los formatos que el back devuelva e.g.: <Media src={publicLink} alt={description}/> */}
                         {publicLink.endsWith(".jpg") && <img src={publicLink} alt={description} lazy style={{ width: '480px', height: '480px' }}/>}
+                        {publicLink.endsWith(".png") && <img src={publicLink} alt={description} lazy style={{ width: '480px', height: '480px' }}/>}
                         {publicLink.endsWith(".mp4") && <video> <source src={publicLink} type="video/mp4" style={{ width: '480px', height: '480px' }}/> </video>}
                         {/* Texto a etiqueta html */}
                     </div>

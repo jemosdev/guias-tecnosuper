@@ -6,8 +6,34 @@ import { Link } from "react-router-dom";
 function Card({ card }) {
     const { ID, description, details } = card;
 
+    
     function parseDescription(txt) {
-        return new String(txt).replace(/ /gi, "-").toLowerCase()
+        
+        //object to map each character accented to its version without accented
+        const accentsMap = {
+            'á': 'a',
+            'é': 'e',
+            'í': 'i',
+            'ó': 'o',
+            'ú': 'u',
+            'Á': 'A',
+            'É': 'E',
+            'Í': 'I',
+            'Ó': 'O',
+            'Ú': 'U',
+            'ñ': 'n',
+            'Ñ': 'N'
+        };
+
+        // Replace accented chars with plain counterparts
+        const slug = txt.split('').map(char => accentsMap[char] || char).join('');
+
+        // Replace spaces with hyphens, convert to lowercase, and remove invalid chars
+        return slug
+            .replace(/ /g, '-')         // Replace spaces with hyphens
+            .toLowerCase()              // Convert to lowercase
+            .replace(/[^a-z0-9-]/g, '') // Remove invalid chars
+            .replace(/-+/g, '-');       // Replace multiple hyphens with a single hyphen
     }
 
     return (
