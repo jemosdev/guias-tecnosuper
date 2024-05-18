@@ -1,12 +1,12 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from "react-bootstrap";
+import { useParams } from "react-router-dom";
 
 import { Topbar } from "../components/Topbar/Topbar";
-import { Container } from "react-bootstrap";
-
-import { useParams } from "react-router-dom";
 import { NavigationButton } from "../components/NavigationButton/NavigationButton";
 import { useFetch } from "../useFetch";
+
 
 function GuideDetailPage() {
     //useParams return all parameters available of the specific page 
@@ -17,37 +17,37 @@ function GuideDetailPage() {
     const { data, isLoading, error } = useFetch(URL);
 
     if (isLoading) {
-        return <p>Ta cargando, tenga paciencia</p>
+        return <p>Loading...</p>
     }
 
     if (error) {
-        return <p>Cógela suave, intenta de nuevo luego</p>
+        return <p>Error: {error.message}</p>
     }
 
     if (!data) {
-        return <p>Papi, esta guia no existe, busca oficio</p>
+        return <p>There is not data</p>
     }
 
     const { publicLink, description, details } = data;
 
     return (
-        <div>
+        <div className="app">
             <Topbar />
             <Container >
                 <div className="guideDetail-container py-4 ">
                     <NavigationButton to={"/guides"}>VOLVER</NavigationButton>
-                    <h2 className=" d-flex justify-content-center pt-2">{description}</h2>
+                    <h2 className="d-flex justify-content-center py-4 text-light">{description}</h2>
                 </div>
                 <div >
-                    <div className="d-flex justify-content-center pt-2">
+                    <div className="d-flex justify-content-center">
                         {/* crear un componente para manejar todos los formatos que el back devuelva e.g.: <Media src={publicLink} alt={description}/> */}
-                        {publicLink.endsWith(".jpg") && <img src={publicLink} alt={description} lazy style={{ width: '480px', height: '480px' }}/>}
-                        {publicLink.endsWith(".png") && <img src={publicLink} alt={description} lazy style={{ width: '480px', height: '480px' }}/>}
-                        {publicLink.endsWith(".mp4") && <video> <source src={publicLink} type="video/mp4" style={{ width: '480px', height: '480px' }}/> </video>}
-                        {/* Texto a etiqueta html */}
+                        {publicLink.endsWith(".jpg") && <img src={publicLink} alt={description} loading="lazy" style={{ minWidth: '120px', minHeight: '120px' }}/>}
+                        {publicLink.endsWith(".png") && <img src={publicLink} alt={description} loading="lazy" style={{ minWidth: '120px', minHeight: '120px' }}/>}
+                        {publicLink.endsWith(".mp4") && <video> <source src={publicLink} type="video/mp4" style={{ minWidth: '120px', minHeight: '120px' }}/> </video>}
                     </div>
-                    <div>
-                        <div dangerouslySetInnerHTML={{ __html: details }} />
+                    <div className="d-flex flex-column py-4 text-light fs-4">
+                        {/* Texto a etiqueta html */}
+                        <p dangerouslySetInnerHTML={{ __html: details }} />
                     </div>
                 </div>
             </Container>

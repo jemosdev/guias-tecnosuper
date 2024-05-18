@@ -1,4 +1,27 @@
-.App {
-  background-color: #000;
-  margin: 0 auto;
+:root {
+  --background-color-0: #000;
+  --background-color-1: #111111;
 }
+
+.app {
+  background-color: var(--background-color-1);
+}
+
+/*Define global styles
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+} */

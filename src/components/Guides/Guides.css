@@ -1,5 +1,15 @@
-.bgTopLeft,
-.bgBottomRight {
+.guide-container {
+    background-color: var(--background-color-1);
+}
+
+.guide-container .guide-text b {
+    background: #7E35E4;
+    -webkit-background-clip: text;
+    /* no necesariamente compatible */
+    color: transparent;
+}
+
+.bgTopLeft, .bgBottomRight {
     background-image: url("../../assets/bards.svg");
     background-repeat: no-repeat;
     background-size: 100px;
@@ -12,7 +22,4 @@
 
 .bgBottomRight {
     background-position: bottom right;
-}
-.Guide-container {
-    background-color: #111111;
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import { useSearchParams } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useSearchParams } from "react-router-dom";
 
 import { Topbar } from "../components/Topbar/Topbar.jsx";
 import { SearchBar } from "../components/SearchBar/SearchBar.jsx";

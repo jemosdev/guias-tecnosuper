@@ -2,7 +2,6 @@ import React from "react";
 import "./Contact.css";
 
 import { Container, Row } from "react-bootstrap";
-import { Footer } from "../Footer/Footer";
 
 function Contact() {
     return (

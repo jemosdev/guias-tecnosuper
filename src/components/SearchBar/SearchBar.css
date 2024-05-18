@@ -1,5 +1,5 @@
 .searchbar-wrapper {
-    background-color: #111;
+    background-color: var(--background-color-1);
 }
 .search-container {
     width: 36%;

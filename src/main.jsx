@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 
-import App from './App.jsx';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { App } from './App.jsx';
 import { HomePage } from './pages/HomePage.jsx';
 import { GuidePage } from './pages/GuidePage.jsx';
 import { NotFoundPage } from './pages/NotFoundPage.jsx';
