@@ -3,7 +3,7 @@
 }
 .search-container {
     width: 36%;
-    height: 43px;
+    height: 44px;
 }
 .searchbar {
     width: 100%;
@@ -24,4 +24,17 @@
 }
 .search-container {
     position: relative;
+}
+@media screen and (max-width: 768px)  {
+    .search-container {
+        width: 48%;
+    }
+    .searchbar {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 425px)  {
+    .search-container {
+        width: 60%;
+    }
 }

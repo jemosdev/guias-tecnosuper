@@ -41,14 +41,11 @@ function GuideDetailPage() {
                 </div>
                 <div >
                     <div className="d-flex justify-content-center">
-                        {/* crear un componente para manejar todos los formatos que el back devuelva e.g.: <Media src={publicLink} alt={description}/> */}
-                        {/* {publicLink.endsWith(".jpg") && <img src={publicLink} alt={description} loading="lazy" style={{ minWidth: '120px', minHeight: '120px' }}/>}
-                        {publicLink.endsWith(".png") && <img src={publicLink} alt={description} loading="lazy" style={{ minWidth: '120px', minHeight: '120px' }}/>}
-                        {publicLink.endsWith(".mp4") && <video> <source src={publicLink} type="video/mp4" style={{ minWidth: '120px', minHeight: '120px' }}/> </video>} */}
+                        {/* component to handle all the format that the returns */}
                         <Media src={publicLink} alt={description} />
                     </div>
                     <div className="d-flex flex-column py-4 text-light fs-4">
-                        {/* Texto a etiqueta html */}
+                        {/* convert text or string to html tag */}
                         <p dangerouslySetInnerHTML={{ __html: details }} />
                     </div>
                 </div>

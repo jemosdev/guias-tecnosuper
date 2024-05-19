@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Header } from "../header/Header";
-import { Guides } from "../Guides/Guides";
+import { GuidesHome } from "../GuidesHome/GuidesHome";
 import { AboutUs } from "../About/About";
 import { ContactUs } from "../ContactUs/ContactUs";
 
@@ -11,7 +11,7 @@ function Home () {
     return (
         <>
             <Header/>
-            <Guides />
+            <GuidesHome />
             <AboutUs/>
             <ContactUs/>
         </>

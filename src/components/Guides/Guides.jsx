@@ -2,8 +2,8 @@ import React from "react";
 import "./Guides.css";
 import { Cards } from "../Cards/Cards";
 
-function Guides({ searchValue }) {
-
+function Guides({ searchValue, limitCard }) {
+    
     return (
         <div className="guide-container p-4">
             <div className="bgTopLeft">
@@ -15,7 +15,7 @@ function Guides({ searchValue }) {
 
                         <div className="pb-4"/>
 
-                        <Cards searchValue={ searchValue } />
+                        <Cards searchValue={ searchValue } limitCard={limitCard} />
                     </div>
                 </div>
             </div>

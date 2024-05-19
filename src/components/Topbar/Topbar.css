@@ -14,3 +14,6 @@
     /* text-decoration: underline; */
     border-bottom: 3px solid #54267D;
 }
+.navbar-light .is_active {
+    font-weight: bold;
+}

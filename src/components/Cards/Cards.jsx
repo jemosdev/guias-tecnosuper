@@ -3,7 +3,7 @@ import "./Cards.css";
 import { Card } from "../Card/Card";
 import { useFetch } from "../../useFetch";
 
-function Cards({ searchValue }) {
+function Cards({ searchValue, limitCard }) {
     const URL = `${import.meta.env.VITE_API_URL}/zoho/v1/console/tecnoGuides`;
 
     const { data, isLoading, error } = useFetch(URL);
@@ -28,12 +28,15 @@ function Cards({ searchValue }) {
         return <div>Error: {error.message}</div>;
     }
 
+    //limit of cards number to show
+    const limitedData = filteredData?.slice(0, limitCard);
+
     return (
         <div className="Cards-grid justify-content-center">
             {
                 //is not null or undefined - ternary operator
-                filteredData && filteredData.length > 0 ? (
-                    filteredData?.map((card) => (
+                limitedData && limitedData.length > 0 ? (
+                    limitedData?.map((card) => (
                         <Card
                             key={card.code}
                             card={card}
