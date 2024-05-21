@@ -2,11 +2,38 @@
     background: url(../../assets/wave1.svg) no-repeat;
     background-size: 100% auto;
     background-position-y: 48%;
-    background-position-x: left;
+    /* background-position-x: left; */
+    position: top;
+    
 }
-
 .footer .wave2 {
     background: url(../../assets/wave2.svg) no-repeat;
     background-size: 100% auto;
-    background-position-x: left;
+    /* background-position-x: left; */
+}
+.footer .wave2 img {
+    height: 42px;
+}
+@media screen and (max-width: 768px)  {
+    .footer .wave2 span {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 668px)  {
+    
+    .footer .wave1 {
+        background-position: bottom;
+    }
+
+    .footer .wave2 {
+        background-position: bottom;
+    }
+
+    .footer .wave2 span {
+        display: none;
+    }
+
+    .footer .wave2 .footer-icons-social {
+        height: 40px;
+    }
 }

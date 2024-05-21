@@ -3,19 +3,19 @@ import "./Guides.css";
 import { Cards } from "../Cards/Cards";
 
 function Guides({ searchValue, limitCard }) {
-    
+
     return (
         <div className="guide-container p-4">
             <div className="bgTopLeft">
                 <div className="bgBottomRight">
-                    <div className="container">
-                        <div className="guide-text text-light text-center pb-4">
+                    <div className="container py-2">
+                        <div className="guide-text text-light text-center pb-2">
                             <h1>Guias <b>Tecnosuper</b></h1>
                         </div>
 
-                        <div className="pb-4"/>
+                        <div className="py-4" />
 
-                        <Cards searchValue={ searchValue } limitCard={limitCard} />
+                        <Cards searchValue={searchValue} limitCard={limitCard} />
                     </div>
                 </div>
             </div>

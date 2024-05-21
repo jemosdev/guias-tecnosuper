@@ -11,17 +11,17 @@ function Footer() {
         <footer className="footer">
             <div className="wave1">
                 <div className="wave2">
-                    <Container className="p-5 d-flex text-white text-center align-items-center justify-content-center">
+                    <Container className="footer-icons p-5 d-flex text-white text-center align-items-center justify-content-center fs-4">
                         <div className="px-4">
-                            <FontAwesomeIcon icon={faInstagram} />
-                            <span className="ml-2">@tecnosuper.co</span>
+                            <FontAwesomeIcon className="footer-icons-social" icon={faInstagram} />
+                            <span className="ml-2 px-2">@tecnosuper.co</span>
                         </div>
                         <div>
-                            <img src={logo} alt="logo" height="48px" />
+                            <img src={logo} alt="logo" />
                         </div>
                         <div className="px-4">
-                            <FontAwesomeIcon icon={faFacebook} />
-                            <span className="ml-2">@tecnosuper.co</span>
+                            <FontAwesomeIcon className="footer-icons-social" icon={faFacebook} />
+                            <span className="ml-2 px-2">@tecnosuper.co</span>
                         </div>
                     </Container>
                 </div>
