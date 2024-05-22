@@ -32,7 +32,7 @@ function Topbar() {
                     {/* <i className="bi bi-gear"></i> */}
                 </Navbar.Toggle>
                 <Navbar.Collapse>
-                    <Nav className="ms-auto">
+                    <Nav className="ms-auto fs-5">
                         <Link to="/" className={`nav-link text-light ${isActive("/") ? "is_active" : ""}`}>Home</Link>
                         <Link to="/guides" className={`nav-link text-light ${isActive("/guides") ? "is_active" : ""}`}>Guias</Link>
                         <Link to="/about" className="nav-link text-light">Nosotros</Link>
