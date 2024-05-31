@@ -13,7 +13,7 @@ function Hero() {
                     <Col md={6} className="column-hero-1">
                         <div className="hero_left pt-4 pb-2">
                             <h1>Bienvenido a nuestra web de <span>guias para la app de tecnosuper</span></h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem, architecto vitae culpa fugiat saepe voluptatibus ea dicta ipsum enim! Dolorum nulla incidunt sapiente ex harum. Maxime explicabo repudiandae sequi?</p>
+                            <p>Este sitio web ha sido creado exclusivamente con el objetivo de apoyar los procesos de aprendizaje y adaptación en la empresa. Aquí encontrarás una serie de recursos detallados y tutoriales que te permitirán comprender mejor los procesos internos de nuestra compañía, los cuales se deben realizar a través de nuestro sistema de información.</p>
                         </div>
                         <div>
                             <NavigationButton to={"/guides"}>VER GUIAS</NavigationButton>
