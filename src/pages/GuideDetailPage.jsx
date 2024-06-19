@@ -1,28 +1,31 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from "react-bootstrap";
-import { useParams } from "react-router-dom";
-
 import { Topbar } from "../components/Topbar/Topbar";
 import { NavigationButton } from "../components/NavigationButton/NavigationButton";
-import { useFetch } from "../useFetch";
 import { Media } from "../components/Media/Media";
+import { useParams } from "react-router-dom";
+import { useFetch } from "../useFetch";
 
 
 function GuideDetailPage() {
     //useParams return all parameters available of the specific page 
     const { guideId } = useParams();
-
-    const URL = `${import.meta.env.VITE_API_URL}/zoho/v1/console/tecnoGuides/${guideId}`;
-    
+    const URL = `${import.meta.env.VITE_API_URL}/API/v1/tecnoGuides${guideId}`;
+    console.log("Valor de guideId:", guideId);
+    console.log("URL de la API:", URL);
     const { data, isLoading, error } = useFetch(URL);
+    
+    console.log("Valor de data:", data);
+    console.log("Estado de isLoading:", isLoading);
+    console.log("Error:", error);
 
     if (isLoading) {
         return <p>Loading...</p>
     }
 
     if (error) {
-        return <p>Error: {error.message}</p>
+        return <p>Error: {error}</p>
     }
 
     if (!data) {
@@ -30,7 +33,7 @@ function GuideDetailPage() {
     }
 
     const { publicLink, description, details } = data;
-
+    console.log("Valor de publicLink:", publicLink);
     return (
         <div className="app">
             <Topbar />

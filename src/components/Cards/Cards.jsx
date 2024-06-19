@@ -4,10 +4,9 @@ import { Card } from "../Card/Card";
 import { useFetch } from "../../useFetch";
 
 function Cards({ searchValue, limitCard }) {
-    const URL = `${import.meta.env.VITE_API_URL}/zoho/v1/console/tecnoGuides`;
+    const URL = `${import.meta.env.VITE_API_URL}/API/v1/tecnoGuides`;
 
     const { data, isLoading, error } = useFetch(URL);
-
     // Filter data based on searchValue
     const filteredData = data?.filter(tecnoGuides => {
         //verify if searchvalue is defined
@@ -15,8 +14,7 @@ function Cards({ searchValue, limitCard }) {
             return true;
         }
         return tecnoGuides.description && tecnoGuides.description.toLowerCase().includes(searchValue.toLowerCase())
-    }
-    );
+    });
 
     // Loading status handling API
     if (isLoading) {
@@ -25,7 +23,7 @@ function Cards({ searchValue, limitCard }) {
 
     // Handling error of the API
     if (error) {
-        return <div>Error: {error.message}</div>;
+        return <div>Error: {error}</div>;
     }
 
     //limit of cards number to show

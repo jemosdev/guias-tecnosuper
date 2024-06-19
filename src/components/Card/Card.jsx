@@ -41,6 +41,7 @@ function Card({ card }) {
             <div className="card-body text-center rounded-4 d-flex flex-column p-2 align-items-stretch">
                 <div className="py-2 d-flex flex-column justify-content-center">
                     <h4 className="card-text text-light pb-1">{description}</h4>
+                    {/* convert text or string to html tag */}
                     <div className="card-title text-light" dangerouslySetInnerHTML={{ __html: details }} />
                 </div>
                 <Link to={`/guides/${parseDescription(description)}/id/${ID}`} className="btn mt-auto btn-outline fw-bold">Uso de la plataforma</Link>
