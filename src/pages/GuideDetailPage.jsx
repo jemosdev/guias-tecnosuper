@@ -11,29 +11,23 @@ import { useFetch } from "../useFetch";
 function GuideDetailPage() {
     //useParams return all parameters available of the specific page 
     const { guideId } = useParams();
-    const URL = `${import.meta.env.VITE_API_URL}/API/v1/tecnoGuides${guideId}`;
-    console.log("Valor de guideId:", guideId);
-    console.log("URL de la API:", URL);
-    const { data, isLoading, error } = useFetch(URL);
-    
-    console.log("Valor de data:", data);
-    console.log("Estado de isLoading:", isLoading);
-    console.log("Error:", error);
+    const URL = `${import.meta.env.VITE_API_URL}/API/v1/tecnoGuides/${guideId}`;
 
-    if (isLoading) {
-        return <p>Loading...</p>
+    const { data, loading, error } = useFetch(URL);
+    
+    if (loading) {
+        return <p>Loading!!</p>
     }
 
     if (error) {
         return <p>Error: {error}</p>
     }
-
+    
     if (!data) {
         return <p>There is not data</p>
     }
-
     const { publicLink, description, details } = data;
-    console.log("Valor de publicLink:", publicLink);
+    
     return (
         <div className="app">
             <Topbar />

@@ -5,8 +5,9 @@ import { useFetch } from "../../useFetch";
 
 function Cards({ searchValue, limitCard }) {
     const URL = `${import.meta.env.VITE_API_URL}/API/v1/tecnoGuides`;
-
-    const { data, isLoading, error } = useFetch(URL);
+    
+    const { data, loading, error } = useFetch(URL);
+    
     // Filter data based on searchValue
     const filteredData = data?.filter(tecnoGuides => {
         //verify if searchvalue is defined
@@ -17,7 +18,7 @@ function Cards({ searchValue, limitCard }) {
     });
 
     // Loading status handling API
-    if (isLoading) {
+    if (loading) {
         return <div>Loading...</div>;
     }
 
