@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import { Header } from "../header/Header";
+import { Header } from "../Header/Header";
 import { GuidesHome } from "../GuidesHome/GuidesHome";
 import { AboutUs } from "../About/About";
 import { ContactUs } from "../ContactUs/ContactUs";
