@@ -13,6 +13,9 @@ jobs:
             - name: Checkout repository 📄
               uses: actions/checkout@v2
 
+            - name: Clean npm cache 🚿
+              run: npm cache clean --force
+            
             - name: Set up Node.js 💻
               uses: actions/setup-node@v2
               with:
@@ -32,5 +35,5 @@ jobs:
                   S3_BUCKET: ${{ secrets.S3_BUCKET }}
               run: |
                   npm install -g aws-cli
-                  aws s3 sync build/ s3://$S3_BUCKET --delete
+                  aws s3 sync dist/ s3://$S3_BUCKET --delete
                   aws s3 website s3://$S3_BUCKET --index-document index.html --error-document index.html
