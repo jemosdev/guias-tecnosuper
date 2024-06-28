@@ -12,22 +12,19 @@ function useFetch(url) {
             try {
                 const response = await fetch(url);
                 const contentType = response.headers.get("content-type");
-                let result;
 
-                try {
-                    result = await response.json();
-                } catch (jsonError) {
-                    const text = await response.text();
-                    setError(`Expected JSON, but got HTML: ${text.substring(0, 200)}`);
-                    setData([]);
-                    setLoading(false);
-                    return;
-                }
-                if (response.ok) {
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    throw new Error(errorText || "Error fetching data");
+
+                } 
+
+                if (contentType && contentType.includes("application/json")) {
+                    const result = await response.json();
                     setData(result.data || []);
                 } else {
-                    setError(error.message || "Error fetching data");
-                    setData([]);
+                    const text = await response.text();
+                    throw new Error(`Expected JSON, but got: ${text.substring(0, 200)}`);
                 }
             } catch (error) {
                 setError(error.message || "Error fetching data");
