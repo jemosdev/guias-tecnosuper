@@ -9,9 +9,6 @@ jobs:
     build:
         runs-on: ubuntu-latest
         
-        env:
-          VITE_API_URL: https://zoho.accsolutions.tech
-
         steps:
             - name: Checkout repository 📄
               uses: actions/checkout@v4
