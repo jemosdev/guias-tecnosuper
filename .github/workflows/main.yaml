@@ -25,6 +25,8 @@ jobs:
               run: npm install
               
             - name: Build the application 🔧
+              env:
+                VITE_API_URL: ${{ secrets.VITE_API_URL }}
               run: npm run build
               
             - name: Deploy to S3 🎉
