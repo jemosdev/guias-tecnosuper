@@ -23,6 +23,11 @@ jobs:
         
             - name: Install dependencies 📝
               run: npm install
+              
+            - name: print environment variables
+              env:
+                VITE_API_URL: ${{ secrets.VITE_API_URL }}
+              run: echo "VITE_API_URL = $VITE_API_URL"
 
             - name: Build the application 🔧
               env:
