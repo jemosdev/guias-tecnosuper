@@ -25,6 +25,8 @@ jobs:
               run: npm install
 
             - name: Build the application 🔧
+              env:
+                VITE_API_URL: ${{ secrets.VITE_API_URL }}
               run: npm run build
         
             - name: Deploy to S3 🎉
@@ -37,3 +39,4 @@ jobs:
                   npm install -g aws-cli
                   aws s3 sync dist/ s3://$S3_BUCKET --delete
                   aws s3 website s3://$S3_BUCKET --index-document index.html --error-document index.html
+
