@@ -19,7 +19,7 @@ function Cards({ searchValue, limitCard }) {
 
     // Loading status handling API
     if (loading) {
-        return <div>Loading...</div>;
+        return <div>LOADING!!...</div>;
     }
 
     // Handling error of the API

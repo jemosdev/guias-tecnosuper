@@ -36,7 +36,6 @@ jobs:
                   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
                   AWS_REGION: 'us-east-2'
                   S3_BUCKET: ${{ secrets.S3_BUCKET }}
-                  VITE_API_URL: ${{ secrets.VITE_API_URL }}
               run: |
                   npm install -g aws-cli
                   aws s3 sync dist/ s3://$S3_BUCKET --delete
